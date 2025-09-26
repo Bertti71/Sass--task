@@ -1,1 +1,2 @@
-# Sass--task
+# Sass--tehtävä
+![Kuvakaappaus sivusta](bistroAurora.png)
