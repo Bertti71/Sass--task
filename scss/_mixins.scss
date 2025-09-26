@@ -1,0 +1,21 @@
+@mixin container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 $spacing;
+  }
+  
+
+  @mixin button($bg, $color: #fff) {
+    background: $bg;
+    color: $color;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: $font-title;
+  
+    &:hover {
+      background: lighten($bg, 10%);
+    }
+  }
+  

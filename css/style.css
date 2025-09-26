@@ -1,0 +1,114 @@
+body {
+  font-family: "Uncial Antiqua", serif;
+  background: #1b1b1b;
+  color: #f5f5dc;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  background: #3a2e1f;
+  color: #d4af37;
+  padding: 1rem;
+}
+.site-header .logo {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+}
+.site-header .logo span {
+  color: #d4af37;
+}
+.site-header .main-nav .nav-link {
+  color: #f5f5dc;
+  margin-right: 1rem;
+}
+.site-header .main-nav .nav-link.is-active {
+  border-bottom: 2px solid #d4af37;
+}
+.site-header .main-nav .nav-link:hover {
+  color: #d4af37;
+}
+.site-header .btn-primary {
+  background: #d4af37;
+  color: #3a2e1f;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Cinzel", serif;
+}
+.site-header .btn-primary:hover {
+  background: rgb(221.024691358, 191.7901234568, 96.975308642);
+}
+
+.hero {
+  background: #556b2f;
+  text-align: center;
+  padding: 2rem;
+}
+.hero h2 {
+  font-family: "Cinzel", serif;
+  color: #d4af37;
+}
+.hero .btn-secondary {
+  background: #3a2e1f;
+  color: #d4af37;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Cinzel", serif;
+}
+.hero .btn-secondary:hover {
+  background: rgb(91.2359550562, 72.3595505618, 48.7640449438);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: rgb(14.25, 14.25, 14.25);
+  padding: 1rem;
+  border: 1px solid #d4af37;
+}
+.card h3 {
+  font-family: "Cinzel", serif;
+  color: #d4af37;
+}
+.card .link {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.sidebar {
+  background: rgb(24.7640449438, 19.6404494382, 13.2359550562);
+  padding: 1rem;
+  border-left: 4px solid #d4af37;
+}
+
+.site-footer {
+  background: #3a2e1f;
+  color: #d4af37;
+  text-align: center;
+  padding: 1rem;
+}
+.site-footer .social a {
+  color: #556b2f;
+  margin: 0 0.5rem;
+}
+.site-footer .social a:hover {
+  color: #d4af37;
+}/*# sourceMappingURL=style.css.map */

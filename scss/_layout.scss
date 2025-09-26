@@ -1,0 +1,108 @@
+body {
+    font-family: $font-body;
+    background: $bg;
+    color: $text;
+    margin: 0;
+  }
+  
+  .container {
+    @include container;
+  }
+  
+  .site-header {
+    background: $primary;
+    color: $secondary;
+    padding: $spacing;
+  
+    .logo {
+      font-family: $font-title;
+      font-size: 2rem;
+  
+      span {
+        color: $secondary;
+      }
+    }
+  
+    .main-nav {
+      .nav-link {
+        color: $text;
+        margin-right: $spacing;
+  
+        &.is-active {
+          border-bottom: 2px solid $secondary;
+        }
+  
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  
+    .btn-primary {
+      @include button($secondary, $primary);
+    }
+  }
+  
+  .hero {
+    background: $accent;
+    text-align: center;
+    padding: 2rem;
+  
+    h2 {
+      font-family: $font-title;
+      color: $secondary;
+    }
+  
+    .btn-secondary {
+      @include button($primary, $secondary);
+    }
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: $spacing;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .card {
+    background: darken($bg, 5%);
+    padding: $spacing;
+    border: 1px solid $secondary;
+  
+    h3 {
+      font-family: $font-title;
+      color: $secondary;
+    }
+  
+    .link {
+      color: $secondary;
+      text-decoration: none;
+    }
+  }
+  
+  .sidebar {
+    background: darken($primary, 10%);
+    padding: $spacing;
+    border-left: 4px solid $secondary;
+  }
+  
+  .site-footer {
+    background: $primary;
+    color: $secondary;
+    text-align: center;
+    padding: $spacing;
+  
+    .social a {
+      color: $accent;
+      margin: 0 0.5rem;
+  
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  
